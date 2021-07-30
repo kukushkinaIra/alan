@@ -32,7 +32,34 @@ class CreateCardsTable extends Migration
                 'name' => 'Meat',
                 'number' => 2,
                 'price' => '80$'
+            ],
+
+            [
+                'name' => 'Something',
+                'number' => 3,
+                'price' => '30$'
+            ],
+
+            [
+                'name' => 'Vegetables',
+                'number' => 4,
+                'price' => '90$'
+            ],
+
+            [
+                'name' => 'Candies',
+                'number' => 5,
+                'price' => '90$'
+            ],
+
+            [
+                'name' => 'Vegetables',
+                'number' => 6,
+                'price' => '90$'
             ]
+
+
+
         ];
 
         foreach ($data as $single){
