@@ -35,7 +35,7 @@ class CreateCardsTable extends Migration
             ],
 
             [
-                'name' => 'Something',
+                'name' => 'Fish',
                 'number' => 3,
                 'price' => '30$'
             ],

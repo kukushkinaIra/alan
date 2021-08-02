@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="single-product-info">
-                            <h4 class="title">5. Simple product</h4>
+                            <h4 class="title">{{ $single->name }}</h4>
                             <div class="product-ratting">
                                 <div class="ratting-icons">
                                     <i class="fa fa-star"></i>
@@ -57,7 +57,7 @@
                                 <div class="ratting-caption">1 Review</div>
                             </div>
                             <div class="prices">
-                                <span class="price">$64.43</span>
+                                <span class="price">{{ $single->price }}</span>
                             </div>
                             <div class="product-number">
                                 SKU: <span>101</span>
@@ -315,6 +315,10 @@
             </div>
         </section>
         <!--== End Shop Tab Area ==-->
+
+
+
+
     </main>
 
 @stop

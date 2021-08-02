@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/home', [\App\Http\Controllers\CardController::class, 'index'])->name('card');
+Route::get('/home/{id}', [\App\Http\Controllers\CardController::class, 'show'])->name('single');
+
+

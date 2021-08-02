@@ -284,32 +284,7 @@
         </section>
         <!--== End Product Area Wrapper ==-->
 
-        <!--== Start Offer Area Wrapper ==-->
-        <section class="offer-area" data-aos="fade-up" data-aos-duration="1000">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="single-offer">
-                            <div class="thumb">
-                                <a href="shop-single-product.html">
-                                    <img src="assets/img/shop/offer-1.webp" alt="Alan-Shop">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="single-offer">
-                            <div class="thumb">
-                                <a href="shop-single-product.html">
-                                    <img src="assets/img/shop/offer-2.webp" alt="Alan-Shop">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--== End Offer Area Wrapper ==-->
+
 
         <!--== Start Featured Product Area Wrapper ==-->
         <section class="product-area featured-product-area" data-aos="fade-up" data-aos-duration="1000">
@@ -328,7 +303,7 @@
                             <!-- Start Product Item -->
                             <div class="product-item">
                                 <div class="product-thumb">
-                                    <a href="single-product">
+                                    <a href="{{ route('single', ['id' => $card->id]) }}  {{ $card->name }}">
                                         <img src="assets/img/shop/1.png" alt="Alan-Shop">
                                         <div class="ribbons">
                                             <span class="ribbon ribbon-hot">Sale</span>
@@ -336,7 +311,7 @@
                                         </div>
                                     </a>
                                     <div class="product-action">
-                                        <a class="action-wishlist" href="#/" title="Wishlist">
+                                        <a class="action-wishlist" href="#" title="Wishlist">
                                             <i class="ion-android-favorite-outline"></i>
                                         </a>
                                         <a class="action-quick-view" href="javascript:void(0);" title="Quick View">
@@ -362,68 +337,13 @@
                         </div>
                     @endforeach
 
+
 {{--                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">--}}
 {{--                        <!-- Start Product Item -->--}}
 {{--                        <div class="product-item">--}}
 {{--                            <div class="product-thumb">--}}
 {{--                                <a href="single-product">--}}
-{{--                                    <img src="assets/img/shop/2.webp" alt="Alan-Shop">--}}
-{{--                                </a>--}}
-{{--                                <div class="product-action">--}}
-{{--                                    <a class="action-wishlist" href="shop-wishlist.html" title="Wishlist">--}}
-{{--                                        <i class="ion-android-favorite-outline"></i>--}}
-{{--                                    </a>--}}
-{{--                                    <a class="action-quick-view" href="javascript:void(0);" title="Quick View">--}}
-{{--                                        <i class="ion-ios-search-strong"></i>--}}
-{{--                                    </a>--}}
-{{--                                    <a class="action-cart" href="#/">--}}
-{{--                                        <i class="fa fa-opencart"></i>--}}
-{{--                                    </a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="product-info">--}}
-{{--                                <h4 class="title"><a href="shop-single-product.html">2. New badge product</a></h4>--}}
-{{--                                <div class="prices">--}}
-{{--                                    <span class="price">$80.00</span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <!-- End Product Item -->--}}
-{{--                    </div>--}}
-{{--                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">--}}
-{{--                        <!-- Start Product Item -->--}}
-{{--                        <div class="product-item">--}}
-{{--                            <div class="product-thumb">--}}
-{{--                                <a href="single-product">--}}
-{{--                                    <img src="assets/img/shop/3.png" alt="Alan-Shop">--}}
-{{--                                </a>--}}
-{{--                                <div class="product-action">--}}
-{{--                                    <a class="action-wishlist" href="shop-wishlist.html" title="Wishlist">--}}
-{{--                                        <i class="ion-android-favorite-outline"></i>--}}
-{{--                                    </a>--}}
-{{--                                    <a class="action-quick-view" href="javascript:void(0);" title="Quick View">--}}
-{{--                                        <i class="ion-ios-search-strong"></i>--}}
-{{--                                    </a>--}}
-{{--                                    <a class="action-cart" href="#/">--}}
-{{--                                        <i class="fa fa-opencart"></i>--}}
-{{--                                    </a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="product-info">--}}
-{{--                                <h4 class="title"><a href="shop-single-product.html">11. Product with video</a></h4>--}}
-{{--                                <div class="prices">--}}
-{{--                                    <span class="price">$39.00</span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <!-- End Product Item -->--}}
-{{--                    </div>--}}
-{{--                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">--}}
-{{--                        <!-- Start Product Item -->--}}
-{{--                        <div class="product-item">--}}
-{{--                            <div class="product-thumb">--}}
-{{--                                <a href="single-product">--}}
-{{--                                    <img src="assets/img/shop/4.webp" alt="Alan-Shop">--}}
+{{--                                    <img src="assets/img/shop/8.png" alt="Alan-Shop">--}}
 {{--                                    <div class="ribbons">--}}
 {{--                                        <span class="ribbon ribbon-hot">Sale</span>--}}
 {{--                                        <span class="ribbon ribbon-onsale align-right">-18%</span>--}}
@@ -442,145 +362,13 @@
 {{--                                </div>--}}
 {{--                            </div>--}}
 {{--                            <div class="product-info">--}}
-{{--                                <h4 class="title"><a href="shop-single-product.html">3. Variable product</a></h4>--}}
+{{--                                <h4 class="title"><a href="shop-single-product.html">Product dummy title</a></h4>--}}
 {{--                                <div class="prices">--}}
-{{--                                    <span class="price">$70.00</span>--}}
-{{--                                    <del class="price-old">$85.00</del>--}}
+{{--                                    <span class="price">$110.00</span>--}}
+{{--                                    <del class="price-old">$130.00</del>--}}
 {{--                                </div>--}}
 {{--                            </div>--}}
 {{--                        </div>--}}
-{{--                        <!-- End Product Item -->--}}
-{{--                    </div>--}}
-{{--                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">--}}
-{{--                        <!-- Start Product Item -->--}}
-{{--                        <div class="product-item">--}}
-{{--                            <div class="product-thumb">--}}
-{{--                                <a href="single-product">--}}
-{{--                                    <img src="assets/img/shop/5.png" alt="Alan-Shop">--}}
-{{--                                    <div class="ribbons">--}}
-{{--                                        <span class="ribbon-soldout">Soldout</span>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                                <div class="product-action">--}}
-{{--                                    <a class="action-wishlist" href="#/" title="Wishlist">--}}
-{{--                                        <i class="ion-android-favorite-outline"></i>--}}
-{{--                                    </a>--}}
-{{--                                    <a class="action-quick-view" href="javascript:void(0);" title="Quick View">--}}
-{{--                                        <i class="ion-ios-search-strong"></i>--}}
-{{--                                    </a>--}}
-{{--                                    <a class="action-cart" href="#/">--}}
-{{--                                        <i class="fa fa-opencart"></i>--}}
-{{--                                    </a>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="product-info">--}}
-{{--                                <h4 class="title"><a href="shop-single-product.html">4. Soldout product</a></h4>--}}
-{{--                                <div class="prices">--}}
-{{--                                    <span class="price">$19.00</span>--}}
-{{--                                    <del class="price-old">$29.00</del>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <!-- End Product Item -->--}}
-{{--                    </div>--}}
-{{--                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">--}}
-{{--                        <!-- Start Product Item -->--}}
-{{--                        <div class="product-item">--}}
-{{--                            <div class="product-thumb">--}}
-{{--                                <a href="single-product">--}}
-{{--                                    <img src="assets/img/shop/6.png" alt="Alan-Shop">--}}
-{{--                                    <span class="ribbon ribbon-hot">Sale</span>--}}
-{{--                                    <span class="ribbon ribbon-onsale align-right">-35%</span>--}}
-{{--                                </a>--}}
-{{--                                <div class="product-action">--}}
-{{--                                    <a class="action-wishlist" href="shop-wishlist.html" title="Wishlist">--}}
-{{--                                        <i class="ion-android-favorite-outline"></i>--}}
-{{--                                    </a>--}}
-{{--                                    <a class="action-quick-view" href="javascript:void(0);" title="Quick View">--}}
-{{--                                        <i class="ion-ios-search-strong"></i>--}}
-{{--                                    </a>--}}
-{{--                                    <a class="action-cart" href="#/">--}}
-{{--                                        <i class="fa fa-opencart"></i>--}}
-{{--                                    </a>--}}
-{{--                                </div>--}}
-{{--                                <div class="countdown-content">--}}
-{{--                                    <ul class="countdown-timer">--}}
-{{--                                        <li><span class="days">00</span><p class="days_text">Days</p></li>--}}
-{{--                                        <li><span class="hours">00</span><p class="hours_text">Hour</p></li>--}}
-{{--                                        <li><span class="minutes">00</span><p class="minutes_text">Mint</p></li>--}}
-{{--                                        <li><span class="seconds">00</span><p class="seconds_text">Sec</p></li>--}}
-{{--                                    </ul>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="product-info">--}}
-{{--                                <h4 class="title"><a href="shop-single-product.html">8. Countdown product</a></h4>--}}
-{{--                                <div class="prices">--}}
-{{--                                    <span class="price">$39.00</span>--}}
-{{--                                    <del class="price-old">$60.00</del>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <!-- End Product Item -->--}}
-{{--                    </div>--}}
-{{--                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">--}}
-                        <!-- Start Product Item -->
-                        <div class="product-item">
-                            <div class="product-thumb">
-                                <a href="single-product">
-                                    <img src="assets/img/shop/7.png" alt="Alan-Shop">
-                                </a>
-                                <div class="product-action">
-                                    <a class="action-wishlist" href="shop-wishlist.html" title="Wishlist">
-                                        <i class="ion-android-favorite-outline"></i>
-                                    </a>
-                                    <a class="action-quick-view" href="javascript:void(0);" title="Quick View">
-                                        <i class="ion-ios-search-strong"></i>
-                                    </a>
-                                    <a class="action-cart" href="#/">
-                                        <i class="fa fa-opencart"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="product-info">
-                                <h4 class="title"><a href="shop-single-product.html">9. Without shortcode product</a></h4>
-                                <div class="prices">
-                                    <span class="price">$79.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Product Item -->
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <!-- Start Product Item -->
-                        <div class="product-item">
-                            <div class="product-thumb">
-                                <a href="single-product">
-                                    <img src="assets/img/shop/8.png" alt="Alan-Shop">
-                                    <div class="ribbons">
-                                        <span class="ribbon ribbon-hot">Sale</span>
-                                        <span class="ribbon ribbon-onsale align-right">-18%</span>
-                                    </div>
-                                </a>
-                                <div class="product-action">
-                                    <a class="action-wishlist" href="shop-wishlist.html" title="Wishlist">
-                                        <i class="ion-android-favorite-outline"></i>
-                                    </a>
-                                    <a class="action-quick-view" href="javascript:void(0);" title="Quick View">
-                                        <i class="ion-ios-search-strong"></i>
-                                    </a>
-                                    <a class="action-cart" href="#/">
-                                        <i class="fa fa-opencart"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="product-info">
-                                <h4 class="title"><a href="shop-single-product.html">Product dummy title</a></h4>
-                                <div class="prices">
-                                    <span class="price">$110.00</span>
-                                    <del class="price-old">$130.00</del>
-                                </div>
-                            </div>
-                        </div>
                         <!-- End Product Item -->
                     </div>
                 </div>
